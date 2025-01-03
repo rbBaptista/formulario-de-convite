@@ -1,0 +1,47 @@
+/** @format */
+
+aside {
+	& .aside-container {
+		position: relative;
+
+		& .overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		& .overlay.logo {
+			z-index: 2;
+			width: 46px;
+			height: 46px;
+			margin-top: 2rem;
+			margin-left: 2rem;
+		}
+
+		& .overlay.header {
+			z-index: 2;
+			margin-top: 6rem;
+			margin-left: 2rem;
+
+			& h2 {
+				font: var(--font-logo);
+				color: var(--text-logo);
+			}
+
+			& p {
+				font: var(--font-body-sm);
+				color: var(--text-heading);
+			}
+		}
+
+		& .overlay.background {
+			z-index: 1;
+		}
+	}
+
+	& img {
+		width: 400px;
+		height: 728px;
+		border-radius: 1rem;
+	}
+}

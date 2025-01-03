@@ -1,0 +1,77 @@
+/** @format */
+
+#about-event {
+	& #about-event-header {
+		display: flex;
+		gap: 1rem;
+		margin-bottom: 24px;
+
+		& h2 {
+			font: var(--font-heading-sm);
+			color: var(--text-heading);
+		}
+
+		& img {
+			width: 24px;
+			height: 24px;
+		}
+	}
+
+	& label {
+		margin-bottom: 8px;
+		font: var(--font-body-sm);
+		color: var(--text-body);
+	}
+
+	& input {
+		height: 48px;
+		font: var(--font-body-sm);
+		background-color: var(--input-base);
+		border: 1px solid var(--input-stroke);
+		border-radius: 8px;
+		padding: 0 16px;
+		color: var(--input-placeholder);
+		margin-bottom: 24px;
+
+		&::placeholder {
+			color: var(--input-placeholder);
+		}
+	}
+
+	& select {
+		height: 48px;
+		font: var(--font-body-sm);
+		background-color: var(--input-base);
+		border: 1px solid var(--input-stroke);
+		border-radius: 8px;
+		padding: 0 16px;
+		color: var(--input-placeholder);
+		margin-bottom: 24px;
+
+		&::placeholder {
+			color: var(--input-placeholder);
+		}
+	}
+
+	& textarea {
+		font: var(--font-body-sm);
+		background-color: var(--input-base);
+		border: 1px solid var(--input-stroke);
+		border-radius: 8px;
+		padding: 16px;
+		color: var(--input-placeholder);
+		margin-bottom: 24px;
+
+		&::placeholder {
+			color: var(--input-placeholder);
+		}
+	}
+
+	& .input-group {
+		display: grid;
+	}
+
+	& .textarea-group {
+		display: grid;
+	}
+}

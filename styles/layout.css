@@ -1,0 +1,19 @@
+/** @format */
+
+#app {
+	display: grid;
+	grid-template-columns: 35% 65%;
+
+	height: 100vh;
+	overflow: hidden;
+
+	border: 1px solid red;
+	padding: 1rem;
+}
+
+body {
+	background-color: var(--shape-background);
+	padding: 1rem;
+	width: 1280px;
+	margin: 0 auto; /* Adicione esta linha */
+}

@@ -1,0 +1,107 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Convite de Casamento</title>
+		<link rel="stylesheet" href="styles/index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="app">
+			<aside>
+				<div class="aside-container overlay">
+					<img src="assets/icons/Logo.svg" class="overlay logo" alt="" />
+					<div class="overlay header">
+						<h2>Festivite</h2>
+						<p>Crie um convite digital para o seu evento</p>
+					</div>
+					<img src="assets/imgs/Background.png" class="overlay background" alt="" />
+				</div>
+			</aside>
+
+			<main>
+				<form method="post" enctype="multipart/form-data">
+					<h1>Crie seu convite</h1>
+					<section id="about-event">
+						<div id="about-event-header">
+							<img src="assets/icons/calendar.svg" alt="" />
+							<h2>Sobre o evento</h2>
+						</div>
+						<div class="input-group">
+							<label for="event-name">Titulo</label>
+							<input type="text" id="event-name" name="event-name" placeholder="Nome do evento" />
+						</div>
+						<div class="flex gap-16">
+							<div class="input-group flex-1">
+								<label for="event-date-start">Inicio</label>
+								<input type="datetime-local" id="event-date-start" class="event-date" name="event-date-start" />
+							</div>
+							<div class="input-group flex-1">
+								<label for="event-date-end">Fim</label>
+								<input type="datetime-local" id="event-date-end" class="event-date" name="event-date-end" />
+							</div>
+						</div>
+						<div class="flex gap-16">
+							<div class="input-group flex-1">
+								<label for="event-type">Tipo</label>
+								<select id="event-type" name="event-type">
+									<option value="presencial">Presencial</option>
+									<option value="online">Online</option>
+								</select>
+							</div>
+							<div class="input-group flex-1">
+								<label for="adress">Local</label>
+								<input type="text" id="adress" name="adress" placeholder="Link ou endereco" />
+							</div>
+						</div>
+						<div class="textarea-group">
+							<label for="event-description">Descrição</label>
+							<textarea
+								id="event-description"
+								name="event-description"
+								placeholder="Escreva sobre os detalhes do evento"
+								cols="30"
+								rows="6"
+							></textarea>
+						</div>
+					</section>
+					<section id="personalize">
+						<div id="personalize-header">
+							<img src="assets/icons/paintbrush-vertical.svg" alt="" />
+							<h2>Personalização</h2>
+						</div>
+						<div class="color-select">
+							<label for="color-options">Cor principal</label>
+							<div class="color-options">
+								<label>
+									<input type="radio" name="color" value="red" />
+									<span class="color-swatch red" style="background-color: red"></span>
+								</label>
+								<label>
+									<input type="radio" name="color" value="green" />
+									<span class="color-swatch" style="background-color: green"></span>
+								</label>
+								<label>
+									<input type="radio" name="color" value="blue" />
+									<span class="color-swatch" style="background-color: blue"></span>
+								</label>
+								<label>
+									<input type="radio" name="color" value="yellow" />
+									<span class="color-swatch" style="background-color: yellow"></span>
+								</label>
+							</div>
+						</div>
+					</section>
+				</form>
+			</main>
+		</div>
+	</body>
+</html>
