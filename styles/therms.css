@@ -1,0 +1,31 @@
+/** @format */
+
+#therms {
+	padding: 26px 0 8px 0;
+
+	& label {
+		margin-bottom: 12px;
+	}
+
+	span {
+		font: var(--font-body-xs);
+		color: var(--text-body);
+	}
+
+	a {
+		color: var(--brand-light);
+		text-decoration: none;
+	}
+
+	& button {
+		height: 48px;
+		font: var(--font-body-sm);
+		background-color: var(--brand-dark);
+		border: 1px solid var(--shape-button);
+		border-radius: 8px;
+		padding: 0 16px;
+		color: var(--text-heading);
+		margin-top: 24px;
+		cursor: pointer;
+	}
+}

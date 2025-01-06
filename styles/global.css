@@ -41,6 +41,7 @@
 
 	/* Brand */
 	--brand-light: #59b2ff;
+	--brand-dark: #1d6fb6;
 }
 
 body {
