@@ -11,6 +11,10 @@
 	padding: 1rem;
 }
 
+main {
+	overflow: auto;
+}
+
 body {
 	background-color: var(--shape-background);
 	padding: 1rem;

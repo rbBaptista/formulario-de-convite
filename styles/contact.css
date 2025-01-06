@@ -1,0 +1,35 @@
+/** @format */
+
+#contact {
+	& h2 {
+		font: var(--font-heading-sm);
+		color: var(--text-heading);
+		margin-bottom: 24px;
+	}
+
+	& img {
+		width: 24px;
+		height: 24px;
+	}
+
+	& label {
+		margin-bottom: 8px;
+		font: var(--font-body-sm);
+		color: var(--text-body);
+	}
+
+	& input {
+		height: 48px;
+		font: var(--font-body-sm);
+		background-color: var(--input-base);
+		border: 1px solid var(--input-stroke);
+		border-radius: 8px;
+		padding: 0 16px;
+		color: var(--input-placeholder);
+		margin-bottom: 24px;
+
+		&::placeholder {
+			color: var(--input-placeholder);
+		}
+	}
+}

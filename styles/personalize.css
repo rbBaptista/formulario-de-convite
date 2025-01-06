@@ -60,4 +60,108 @@
 			}
 		}
 	}
+
+	& #theme-select {
+		& .theme-options {
+			display: flex;
+			flex-wrap: wrap;
+			/* max-width: 100%; */
+			margin: 0 auto;
+			gap: 16px;
+
+			& .theme-input {
+				display: grid;
+				place-items: center;
+				justify-content: center;
+				cursor: pointer;
+				position: relative;
+				background-color: var(--shape-button);
+				width: 126px;
+				height: 103px;
+				border-radius: 8px;
+
+				& input[type="radio"] {
+					display: none;
+				}
+
+				input[type="radio"]:checked + .theme-swatch {
+					outline: none; /* Remova a borda do swatch */
+				}
+
+				input[type="radio"]:checked + .theme-swatch::before {
+					content: "";
+					position: absolute;
+					top: -4px;
+					left: -4px;
+					right: -4px;
+					bottom: -4px;
+					border: 2px solid var(--brand-light); /* Altere para a cor desejada */
+					border-radius: 12px;
+				}
+			}
+		}
+	}
+
+	.theme-choice {
+		display: flex;
+		gap: 16px;
+		margin-top: 8px;
+	}
+
+	.theme-option {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		margin-top: 6px;
+		margin-left: 10px;
+	}
+
+	.theme-option input[type="radio"] {
+		display: none;
+	}
+
+	.theme-option .theme-swatch {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		margin-right: 8px;
+		border: 1px solid #ccc;
+	}
+
+	.theme-option input[type="radio"]:checked + .theme-swatch {
+		outline: 2px solid var(--brand-light); /* Altere para a cor desejada */
+		outline-offset: 2px;
+	}
+
+	.custom-file-upload {
+		position: relative;
+		display: inline-block;
+	}
+
+	.custom-file-upload input[type="file"] {
+		display: none;
+	}
+
+	.custom-file-label {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 8px 16px;
+		background-color: var(--shape-button);
+		color: var(--text-body);
+		/* border: 1px solid #ccc; */
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	.custom-file-label .upload-icon {
+		width: 16px;
+		height: 16px;
+		margin-right: 8px;
+	}
+
+	.custom-file-label:hover {
+		background-color: var(--shape-button-hover);
+	}
 }
