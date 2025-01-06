@@ -7,7 +7,7 @@
 
 Este projeto é um formulário de convite digital que permite aos usuários criar convites personalizados para eventos.
 
-![Screenshot do Formulário de Convite](.github/README-img.png)
+![Screenshot do Formulário de Convite](/assets/imgs/README-img.png)
 
 ## Tecnologias Utilizadas
 
